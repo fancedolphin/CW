@@ -1,0 +1,42 @@
+server:
+  port: 6969
+  servlet:
+    context-path: /schoolService #服务路径
+    session:
+      timeout: 36000 #登录超时-秒
+  tomcat:
+    basedir: D:/idtt/opt/tmp/tomcat #文件上传临时路径
+    max-http-form-post-size: 100MB
+#数据库连接
+spring:
+  application:
+    name: schoolService
+  datasource:
+    url: jdbc:mysql://562a0ff519d93661.natapp.cc:13413/school_service?useUnicode=true&characterEncoding=utf8&useCursorFetch=true&defaultFetchSize=500&allowMultiQueries=true&rewriteBatchedStatements=true&useSSL=false
+    username: root
+    password: password
+    driverClassName: com.mysql.jdbc.Driver
+
+#mybatis-plus配置
+mybatis-plus:
+  #    mybatis sql执行日志
+  configuration:
+    map-underscore-to-camel-case: true
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:mapper/*.xml
+
+pagehelper:
+  helperDialect: mysql
+  reasonable: true  #开启优化，如果开启优化，在分页页码结果没有数据的时候,会显示有数据的页码数据
+  supportMethodsArguments: true #是否支持接口参数来传递分页参数，默认false
+  pageSizeZero: false #pageSize=0 返回所有
+  params: count=countSql
+
+
+
+#插件配置
+plugin:
+  pluginConfigFilePath: pluginConfig
+  pluginPath: plugins
+  runMode: prod
+

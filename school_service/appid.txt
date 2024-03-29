@@ -1,0 +1,8 @@
+https://www.mxnzp.com/doc/detail?id=33我用的这个
+你可以用我的key："https://www.mxnzp.com/api/beian/search?domain="
++ base64_string +
+ "&app_id=spkivttrvbocvmxu&app_secret=kwrUKfcb4Xa9prr0gGosBU1AB4Vs8GjX"
+中间的就是转化为base64格式的域名
+
+https://www.mxnzp.com/api/beian/search?domain=YmFpZHUuY29t&app_id=spkivttrvbocvmxu&app_secret=kwrUKfcb4Xa9prr0gGosBU1AB4Vs8GjX
+YmFpZHUuY29t
