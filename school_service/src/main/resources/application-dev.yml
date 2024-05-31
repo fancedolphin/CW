@@ -12,9 +12,9 @@ spring:
   application:
     name: schoolService
   datasource:
-    url: jdbc:mysql://562a0ff519d93661.natapp.cc:13413/school_service?useUnicode=true&characterEncoding=utf8&useCursorFetch=true&defaultFetchSize=500&allowMultiQueries=true&rewriteBatchedStatements=true&useSSL=false
+    url: jdbc:mysql://localhost:3306/school_service?useUnicode=true&characterEncoding=utf8&useCursorFetch=true&defaultFetchSize=500&allowMultiQueries=true&rewriteBatchedStatements=true&useSSL=false
     username: root
-    password: password
+    password: 123456
     driverClassName: com.mysql.jdbc.Driver
 
 #mybatis-plus配置
